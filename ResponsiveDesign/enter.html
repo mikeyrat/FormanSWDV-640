@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap" rel="stylesheet">
+    <title>Recip-Ease Enter Page</title>
+    <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="main-container">
+        <div id="mediaQueryMessage">
+            
+        </div>
+		
+        <section class="leftCol">
+            <a href="/" title="Go to homepage">
+                <img src="/images/Recip-easeLogo.png" alt="Recip-ease Logo - Click to go to homepage" style="max-width: 100%;">
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/search">Search</a></li>
+                    <li><a href="/enter">Enter</a></li>
+                    <li><a href="/share">Share</a></li>
+                    <li><a href="/login">Login/Sign Up</a></li>
+                </ul>
+            </nav>
+			<div class="button-grid">
+				<button>Cup</button>
+				<button>1/2<br>Cup</button>
+				<button>1/4<br>Cup</button>
+				<button>1/3<br>Cup</button>
+				<button>TBSP</button>
+				<button>1/2<br>TBSP</button>
+				<button>TSP</button>
+				<button>1/2<br>TSP</button>
+				<button>Oz.</button>
+				<button>Gms.</button>
+				<button>Qty</button>
+				<button>Other</button>
+			</div>
+			<form class="ingredient-form">
+				<label for="quantity">Quantity:</label>
+				<input type="text" id="quantity" name="quantity" placeholder="Enter quantity">
+		
+				<div class="checkbox">
+					<input type="checkbox" id="divided" name="divided">
+					<label for="divided">Divided</label>
+				</div>
+		
+				<button type="submit">Submit Ingredient</button>
+			</form>
+			<form class="instructions-form">
+				<h4>Enter Instructions By Step</h4>
+				<textarea id="instructions" name="instructions" placeholder="Enter instructions for this step" rows="4"></textarea>
+				<button type="submit">Submit Step</button>
+			</form>
+        </section>
+        <section class="centerCol">
+            <h1 id="siteName">Recip-Ease</h1>
+			<div class="slideshow-mockup">
+				<p>Ingredient List</p>
+			</div>
+			<h2>Entered Ingredients</h2>
+			<div class="slideshow-mockup">
+				<p>Recipe Ingredients and Steps</p>
+			</div>
+			
+        </section>
+        <section class="rightCol"> 
+            <div class="ad-display">
+                Ad Display 
+            </div>
+        </section>
+    </div>
+	<footer class="site-footer">
+		<p>© 2024 Recip-Ease. All rights reserved.</p>
+		<nav>
+			<ul>
+				<li><a href="/privacy">Privacy Policy</a></li>
+				<li><a href="/terms">Terms of Use</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</footer>	
+</body>
+</html>

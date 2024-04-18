@@ -1,0 +1,106 @@
+#siteName {
+  color: #af8168;
+  font-family: "Rockwell Condensed", "Courier Bold", monospace;
+}
+.main-container {
+  background-color: #ede3dd;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #aa7529;
+}
+a {
+  color: #d9a760;
+}
+a:hover {
+  color: #aa7529;
+}
+.site-footer {
+  background-color: #8c805a;
+}
+.navigation li {
+  background-color: #b3866f;
+}
+.navigation li a {
+  color: #8f634c;
+}
+.navigation li:hover,
+.navigation li:hover a {
+  background-color: #c19d8a;
+}
+.navigation li:hover a,
+.navigation li:hover a a {
+  color: #fff;
+}
+.navigation li:nth-child(1) {
+  background-color: #b3866f;
+}
+.navigation li:nth-child(2) {
+  background-color: #e0b77d;
+}
+.navigation li:nth-child(3) {
+  background-color: #9f936a;
+}
+.navigation li:nth-child(4) {
+  background-color: #e0b77d;
+}
+.navigation li:nth-child(5) {
+  background-color: #9f936a;
+}
+.blog-highlights {
+  border: 1px solid #d9a760;
+  background-color: #d2b9ab;
+}
+.blog-highlights h3,
+.blog-highlights .blog-item h4,
+.blog-highlights .recipe h3 {
+  color: #634535;
+}
+.blog-item a {
+  color: #aa7529;
+}
+.blog-item a:hover {
+  color: #d9a760;
+}
+.button-grid button,
+.ingredient-form button,
+.instructions-form button {
+  background-color: #d9a760;
+  font-family: "Rockwell", "Courier Bold", monospace;
+  color: #81591f;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.button-grid button:hover,
+.ingredient-form button:hover,
+.instructions-form button:hover {
+  background-color: #f2e0c7;
+}
+.ingredient-form,
+.instructions-form {
+  font-family: "Rockwell", "Courier Bold", monospace;
+  color: #81591f;
+}
+.ad-display {
+  border: 1px solid #8c805a;
+  background-color: #fff;
+}
+.recipe {
+  border: 1px solid #2f2b1e;
+  background-color: #c3bba2;
+}
+.recipe img {
+  width: 100%;
+  height: auto;
+}
+.recipe h3,
+.recipe p,
+.recipe a {
+  margin: 10px 0;
+}
+.recipe a {
+  color: #81591f;
+}
