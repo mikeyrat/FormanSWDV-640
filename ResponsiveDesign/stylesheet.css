@@ -24,7 +24,7 @@ a:hover {
   background-color: #b3866f;
 }
 .navigation li a {
-  color: #8f634c;
+  color: #634535;
 }
 .navigation li:hover,
 .navigation li:hover a {
@@ -66,7 +66,9 @@ a:hover {
 }
 .button-grid button,
 .ingredient-form button,
-.instructions-form button {
+.instructions-form button,
+.recipe-entry button,
+.closeout-buttons button {
   background-color: #d9a760;
   font-family: "Rockwell", "Courier Bold", monospace;
   color: #81591f;
@@ -76,7 +78,9 @@ a:hover {
 }
 .button-grid button:hover,
 .ingredient-form button:hover,
-.instructions-form button:hover {
+.instructions-form button:hover,
+.recipe-entry button:hover,
+.closeout-buttons button:hover {
   background-color: #f2e0c7;
 }
 .ingredient-form,
@@ -103,4 +107,44 @@ a:hover {
 }
 .recipe a {
   color: #81591f;
+}
+.recipe-entry,
+.closeout-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+.recipe-entry form,
+.closeout-buttons form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+.recipe-entry form label,
+.closeout-buttons form label {
+  margin-bottom: 5px;
+}
+.recipe-entry form input,
+.closeout-buttons form input,
+.recipe-entry form select,
+.closeout-buttons form select {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}
+.closeout-buttons {
+  flex-direction: row;
+  justify-content: center;
+}
+.closeout-buttons button {
+  margin: 0 10px;
+}
+#cancel-button {
+  background-color: #e8c99e;
+}
+#cancel-button:hover {
+  background-color: #edd5b2;
 }

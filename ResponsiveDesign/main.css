@@ -86,6 +86,10 @@ section.leftCol img {
     
 }
 
+#tagline {
+    text-align: center;
+}
+
 .slideshow-mockup {
     width: 100%;  
     height: 450px;

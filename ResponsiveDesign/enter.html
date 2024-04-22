@@ -6,40 +6,17 @@
     <title>Recip-Ease Enter Page</title>
     <link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
 </head>
 <body>
     <div class="main-container">
-        <div id="mediaQueryMessage">
-            
-        </div>
-		
+        <div id="mediaQueryMessage"></div> 
         <section class="leftCol">
             <a href="/" title="Go to homepage">
                 <img src="/images/Recip-easeLogo.png" alt="Recip-ease Logo - Click to go to homepage" style="max-width: 100%;">
             </a>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/search">Search</a></li>
-                    <li><a href="/enter">Enter</a></li>
-                    <li><a href="/share">Share</a></li>
-                    <li><a href="/login">Login/Sign Up</a></li>
-                </ul>
-            </nav>
-			<div class="button-grid">
-				<button>Cup</button>
-				<button>1/2<br>Cup</button>
-				<button>1/4<br>Cup</button>
-				<button>1/3<br>Cup</button>
-				<button>TBSP</button>
-				<button>1/2<br>TBSP</button>
-				<button>TSP</button>
-				<button>1/2<br>TSP</button>
-				<button>Oz.</button>
-				<button>Gms.</button>
-				<button>Qty</button>
-				<button>Other</button>
-			</div>
+            <div id="navigation-placeholder"></div>
+			<div id="button-grid-placeholder"></div>
 			<form class="ingredient-form">
 				<label for="quantity">Quantity:</label>
 				<input type="text" id="quantity" name="quantity" placeholder="Enter quantity">
@@ -59,14 +36,32 @@
         </section>
         <section class="centerCol">
             <h1 id="siteName">Recip-Ease</h1>
+			<h2 id="tagline">Finally... an easy way to enter, save, recall and share your favorite recipes!</h2>
+			<div class="recipe-entry">
+				<form id="recipeForm">
+					<label for="recipeName">Recipe Name:</label>
+					<input type="text" id="recipeName" name="recipeName" placeholder="Enter recipe name">
+					
+					<label for="foodCategory">Food Category:</label>
+					<div id="foodCategoryDropdown"></div>
+			
+					<label for="dishType">Dish Type:</label>
+					<select id="dishType" name="dishType"></select>
+			
+					<button type="submit">Save Recipe Information</button>
+				</form>
+			</div>
 			<div class="slideshow-mockup">
-				<p>Ingredient List</p>
+				<p>Ingredient List<br>Will be added programatically to populate from MongoDB</p>
 			</div>
 			<h2>Entered Ingredients</h2>
 			<div class="slideshow-mockup">
-				<p>Recipe Ingredients and Steps</p>
+				<p>Recipe Ingredients and Steps<br>Functionality will be added programatically on full website</p>
 			</div>
-			
+			<div class="closeout-buttons">
+				<button id="cancel-button" type="submit">Clear Form</button>
+				<button type="submit">Save Recipe</button>
+			</div>
         </section>
         <section class="rightCol"> 
             <div class="ad-display">
@@ -74,15 +69,9 @@
             </div>
         </section>
     </div>
-	<footer class="site-footer">
-		<p>© 2024 Recip-Ease. All rights reserved.</p>
-		<nav>
-			<ul>
-				<li><a href="/privacy">Privacy Policy</a></li>
-				<li><a href="/terms">Terms of Use</a></li>
-				<li><a href="/contact">Contact Us</a></li>
-			</ul>
-		</nav>
-	</footer>	
+	<div id="footer-placeholder"></div>
+	<script src="templates.js"></script>
+	<script src="commonjs.js"></script>
+	<script src="enterPagejavascript.js"></script>	
 </body>
 </html>
