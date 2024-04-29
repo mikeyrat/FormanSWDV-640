@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var dishes = {
                 desserts: ["Cake", "Pie", "Pudding", "Ice Cream", "Cookies", "Sweet Breads"],
-                breakfast: ["Pancakes", "Omelet", "Porridge", "Eggs", "Waffles", "Cassaroles"],
+                breakfast: ["Pancakes", "Omelet", "Porridge", "Eggs", "Waffles", "Casseroles"],
                 appetizers: ["Bruschetta", "Falafel", "Caprese Salad", "Wings", "Cheese Sticks", "Potato Skins"],
                 salads: ["Potato Salad", "Macaroni Salad", "Caesar Salads", "Salads with Protien"],
-                maincourses: ["Roast Beef", "Chicken Dishes", "Dinner Cassaroles", "On The Grill", "Pork"],
-                drinks: ["After Dinner", "Margeritas", "Cocktails", "Martinis"]
+                maincourses: ["Roast Beef", "Chicken Dishes", "Dinner Casseroles", "On The Grill", "Pork"],
+                drinks: ["After Dinner", "Margaritas", "Cocktails", "Martinis"]
             };
 
             if (dishes[category]) {

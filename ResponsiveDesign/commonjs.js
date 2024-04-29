@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Assuming navTemplate and footerTemplate are globally accessible from templates.js
 
     // Render Navigation
     if (document.getElementById('navigation-placeholder')) {

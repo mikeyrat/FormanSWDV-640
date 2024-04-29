@@ -2,6 +2,8 @@
 @primary2Color: #d9a760;
 @primary3Color: #8c805a;
 @whiteColor: #fff; 
+@greyColor: #ccc;
+@blackColor: #000;
 @lightenHeadline: 5%;
 @lightenNavigation: 7%;
 @lightenHover: 15%;
@@ -35,6 +37,7 @@ a:hover {
 
 .site-footer {
     background-color: @primary3Color;
+    color: @whiteColor;
 }
 
 .navigation li {
@@ -90,7 +93,7 @@ a:hover {
     }
 }
 
-.button-grid button, .ingredient-form button, .instructions-form button, .recipe-entry button, .closeout-buttons button {
+.button-grid button, .ingredient-form button, .instructions-form button, .recipe-entry button, .recipe-entry submit, .closeout-buttons button {
     .buttonStyle();
 }
 
@@ -123,6 +126,17 @@ a:hover {
     }
 }
 
+.recipe-item {
+    margin-bottom: 10px;
+    
+    h3 {
+    color: @primary2Color; 
+    }
+    a {
+    color:@primary1Color; 
+    }
+}
+
 
 .formElementStyles() {
     display: flex;
@@ -150,6 +164,93 @@ a:hover {
 
     form {
         .formElementStyles(); 
+    }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    button {
+        .buttonStyle(); 
+        margin: 5px; 
+    }
+}
+
+.social-login {
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+
+    button {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    button:first-child {
+        margin-top: 0; 
+    }
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-form form {
+    display: flex;  
+    width: 100%; 
+    max-width: 560px;  
+
+    input[type="text"] {
+        flex: 2;  
+        margin-right: 10px;  
+        padding: 8px;
+        border: 1px solid @greyColor;
+    }
+
+    button {
+        flex: 1;
+        padding: 8px 16px;
+        background-color: @primary2Color;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten(@primary2Color, @lightenHover);  
+        }
+    }
+}
+
+.search-results {
+    
+    button {
+        background-color: @primary2Color;
+    
+        &:hover {
+        background-color: lighten(@primary2Color, @lightenHover);
+        }
+    }
+}
+
+.login-form {
+    flex-direction: row; 
+
+    input[type="email"], input[type="password"] {
+        margin-right: 5px; 
+    }
+
+    button {
+        margin: 0 10px; 
     }
 }
 
